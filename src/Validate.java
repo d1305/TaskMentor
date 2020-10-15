@@ -1,5 +1,5 @@
 public class Validate {
-        private boolean isRoman(String inputStr){
+    private boolean isRoman(String inputStr){
         return inputStr.matches("^I$|^II$|^III$|^IV$|^V$|^VI$|^VII$|^VIII$|^IX$|^X$");
     }
 
@@ -15,7 +15,7 @@ public class Validate {
         }
     }
 
-    public String validateInput(String input1, String input2, String operator) {
+    public String validateInput(String input1, String operator, String input2) {
         String result = "";
         if (isRoman(input1) ^ isRoman(input2)){
             throw new RuntimeException();
@@ -41,7 +41,7 @@ public class Validate {
             throw new RuntimeException();
         }
 
-        if (!operator.matches("[-+*/]{1}")){
+        if (operator.matches("[-+*/]")){
             throw new RuntimeException();
         }
 
