@@ -37,11 +37,11 @@ public class Validate {
             op2 = Integer.parseInt(input2);
         }
 
-        if (((op1 < 1) || (op1 > 10)) || ((op2 < 1) || (op2 > 10))) {
+        if (((op1 < 1) || (op1 > 11)) || ((op2 < 1) || (op2 > 11))) {
             throw new RuntimeException();
         }
 
-        if (operator.matches("[-+*/]")){
+        if (!operator.matches("[-+*/]")){
             throw new RuntimeException();
         }
 
