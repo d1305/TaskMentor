@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class ConvertRoman {
     public int romanToInt(String input) {
         int result = 0;
@@ -69,6 +67,58 @@ public class ConvertRoman {
             case 19: result = "XIX";
                 break;
             case 20: result = "XX";
+                break;
+            case 21: result = "XXI";
+                break;
+            case 24: result = "XXIV";
+                break;
+            case 25: result = "XXV";
+                break;
+            case 27: result = "XXVII";
+                break;
+            case 28: result = "XXVIII";
+                break;
+            case 30: result = "XXX";
+                break;
+            case 32: result = "XXXII";
+                break;
+            case 35: result = "XXXV";
+                break;
+            case 36: result = "XXXVI";
+                break;
+            case 40: result = "XXXX";
+                break;
+            case 42: result = "XXXXII";
+                break;
+            case 45: result = "XXXXV";
+                break;
+            case 48: result = "XXXXVIII";
+                break;
+            case 49: result = "XXXXIX";
+                break;
+            case 50: result = "L";
+                break;
+            case 54: result = "LIV";
+                break;
+            case 56: result = "LVI";
+                break;
+            case 60: result = "LX";
+                break;
+            case 63: result = "LIII";
+                break;
+            case 64: result = "LIV";
+                break;
+            case 70: result = "LXX";
+                break;
+            case 72: result = "LXXII";
+                break;
+            case 80: result = "LXXX";
+                break;
+            case 81: result = "LXXXI";
+                break;
+            case 90: result = "LXXXX";
+                break;
+            case 100: result = "C";
                 break;
         }
         return result;
